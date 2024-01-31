@@ -1,6 +1,8 @@
 # Cybersecurity
 FMI Course Active Information Security
+
 Lecturer - Ivan Zlatanov
+
 Academic year - 2023/24
 
 # My notes -
